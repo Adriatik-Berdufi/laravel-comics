@@ -12,7 +12,7 @@
 
   <body>
     @include('partials.header')
-    <main>homepage</main>
+    <main>characters</main>
     @include('partials.footer')
 
   </body>
