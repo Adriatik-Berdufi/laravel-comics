@@ -1,9 +1,13 @@
 @import "~bootstrap/scss/bootstrap";
 
 .main-container{
-    height: calc(100vh - 120px);
     overflow: scroll;
     .card{
         height: 420px;
+        img{
+            height: 280px;
+            width: 100%;
+            border-radius: 5px;
+        }
     }
 }
