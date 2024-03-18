@@ -20,7 +20,8 @@ Route::get('/character', function () {
   return view('characters');
 })->name('characters');
 Route::get('/comics', function () {
-  return view('comics');
+  $title = config('db');
+  return view('comics', compact('title'));
 })->name('comics');
 Route::get('/movies', function () {
   return view('movies');

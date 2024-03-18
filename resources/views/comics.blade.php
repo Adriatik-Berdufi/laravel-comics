@@ -1,5 +1,10 @@
 @extends('layout.app')
 
 @section('main-content')
-  <main>comics</main>
+<main>
+    <div class='main-container'>
+      comics
+      @dump($title);
+    </div>
+  </main>
 @endsection
