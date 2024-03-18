@@ -3,8 +3,18 @@
 @section('main-content')
 <main>
     <div class='main-container'>
-      comics
-      @dump($title);
+      <div class="row">
+        @foreach($titles as $title)
+          <div class="col-2 p-3">
+            <div class="card">
+              <img src="{{$title['thumb']}}" alt="img">
+              <div class="card-body">
+                <h5 class="card-title">{{$title['title']}}</h5>
+              </div>
+            </div>
+          </div>
+        @endforeach
+      </div>
     </div>
   </main>
 @endsection
