@@ -1,5 +1,9 @@
 @extends('layout.app')
 
 @section('main-content')
-  <main>characters</main>
+  <main>
+    <div class='main-container'>
+      characters
+    </div>
+  </main>
 @endsection
