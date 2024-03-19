@@ -3,10 +3,11 @@
 .main-container{
     overflow: scroll;
     .card{
-        height: 420px;
+        height: 380px;
         img{
-            height: 280px;
             width: 100%;
+            aspect-ratio: 2/3;
+            object-fit: cover;
             border-radius: 5px;
         }
     }
