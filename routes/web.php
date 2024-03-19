@@ -25,4 +25,4 @@ Route::get('/videos', [PageController::class, 'videos'])->name('videos');
 Route::get('/fans',[PageController::class, 'fans'])->name('fans');
 Route::get('/news',[PageController::class,'news'])->name('news');
 
-Route::get('/comic-detail/{index}',[PageController::class,'comicDetail'])->name('comicDetail');
+Route::get('/comics/comic-detail/{index}',[PageController::class,'comicDetail'])->name('comicDetail');
