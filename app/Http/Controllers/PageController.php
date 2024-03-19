@@ -37,6 +37,10 @@ class PageController extends Controller
     public function news(){
         return view('news');
     }
-
+    public function comicDetail($index){
+        $comics = config('db');
+        $comic = $comics[$index];
+        return view('comic-detail', compact('comic'));
+    }
 
 }

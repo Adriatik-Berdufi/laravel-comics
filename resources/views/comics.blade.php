@@ -4,10 +4,12 @@
 <main>
     <div class='main-container'>
       <div class="row">
-        @foreach($titles as $title)
+        @foreach($titles as $index => $title)
           <div class="col-2 p-3">
             <div class="card">
-              <img src="{{$title['thumb']}}" alt="img">
+              <a href="{{route('comicDetail',['index' => $index])}}">
+                <img src="{{$title['thumb']}}" alt="img">
+              </a>
               <div class="card-body">
                 <h5 class="card-title">{{$title['title']}}</h5>
               </div>
